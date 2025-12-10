@@ -1,0 +1,10 @@
+#include <stdio.h>
+int q[50], front=0, rear=-1, n;
+
+int main() {
+    int val, i;
+    scanf("%d",&n);
+    scanf("%d",&val); q[++rear]=val;
+    front++;
+    for(i=front;i<=rear;i++) printf("%d ",q[i]);
+}
