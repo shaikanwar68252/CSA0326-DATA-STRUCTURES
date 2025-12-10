@@ -1,0 +1,10 @@
+#include <stdio.h>
+int stack[50], top=-1, n;
+
+int main() {
+    int ch, val;
+    scanf("%d",&n);
+    scanf("%d",&val); stack[++top]=val;
+    top--;
+    if(top>=0) printf("%d", stack[top]);
+}
